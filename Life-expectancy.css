@@ -1,0 +1,175 @@
+:root {
+  --past: #1dd3b0;
+  --present: #ed254e;
+  --future: #f9c22e;
+}
+
+@media (max-device-width: 480px) and (min-device-width: 320px) {
+  .header {
+    max-width: 100%;
+  }
+
+  .yearBefore,
+  .yearAfter,
+  .yearCurrent {
+    width: 10px !important;
+    height: 10px !important;
+    margin: 1px;
+    border-radius: 1px;
+  }
+
+  label,
+  select,
+  input {
+    font-size: 32px;
+    margin: 5px 0 8px 0px;
+  }
+
+  select {
+    border: none;
+    width: 70% !important;
+    padding: 5px;
+  }
+
+  .info {
+    font-size: 12px !important;
+  }
+
+  .info a {
+    font-size: 12px !important;
+  }
+}
+
+.app {
+  padding: 20px 15px 15px 15px;
+}
+
+* {
+  font-size: 26px;
+  line-height: 1.3;
+  /* margin: 20px; */
+  font-family: 'Raleway', sans-serif;
+  /* display: grid;
+  grid-template-columns: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: center;
+  align-items: center; */
+}
+
+body {
+  width: 100vw;
+}
+
+.years {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.yearBefore,
+.yearAfter,
+.yearCurrent {
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+  border-radius: 1px;
+}
+
+.yearBefore2,
+.yearAfter2,
+.yearCurrent2 {
+  width: 5px;
+  height: 5px;
+  margin: 0.5px;
+  border-radius: 1px;
+}
+
+.yearBefore3,
+.yearAfter3,
+.yearCurrent3 {
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+  border-radius: 1px;
+}
+
+.yearBefore {
+  background-color: #1dd3b0;
+}
+
+.yearBefore2 {
+  background-color: #1dd3b0;
+}
+
+.yearBefore3 {
+  background-color: #1dd3b0;
+}
+
+.yearCurrent {
+  background-color: #ed254e;
+}
+
+.yearCurrent2 {
+  background-color: #ed254e;
+}
+
+.yearCurrent3 {
+  background-color: #ed254e;
+}
+
+.yearAfter {
+  background-color: #f9c22e;
+}
+
+.yearAfter2 {
+  background-color: #f9c22e;
+}
+
+.yearAfter3 {
+  background-color: #f9c22e;
+}
+
+label,
+select,
+input {
+  font-size: 22px;
+  margin: 5px 0 8px 0px;
+}
+
+select {
+  /* border-radius: 6px;
+  border-style: solid; 
+  border-width: 1.5px;*/
+  border: none;
+  width: 40%;
+  padding: 5px;
+
+  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
+}
+
+label {
+  margin-right: 15px;
+}
+
+.header {
+  max-width: 70%;
+}
+
+.info {
+  font-size: 16px;
+}
+
+.info a {
+  font-size: 16px;
+}
+
+.add {
+  max-width: 70%;
+}
+
+.measureSwitch {
+  display: none;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./Life-expectancy.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Life-expectancy.css" />
+  </head>
+  <title>Сколько времени осталось</title>
+  <body onload="loadOptions()">
+    <div class="app app2">
+    <div id="header" class="header">
+      <p><span style = "background-color: #1dd3b0">Сколько <span id="ym"></span></span> прожил среднестатистический житель страны <span style = "background-color: #ed254e">в вашем возрасте</span>, <span style = "background-color: #f9c22e">и сколько ещё осталось</span></p> 
+      <select id="selectMeasure" onchange="App()" class="measureSwitch">
+        <option value="12" id="measure1">Месяцы</option>
+        <option value="1" id="measure2">Годы</option>
+        <option value="52" id="measure3">Недели</option>
+        <option value="365" id="measure3">Дни</option>
+        </select></br>
+    </div>
+      
+      <div id="years" class="years">
+        <!-- <div class="year" id="yearG"></div> -->
+      </div>
+      <!-- <label for="selectCountry">Страна</label> -->
+      <select id="selectCountry" onchange="App()">
+        <option selected="true" disabled>Страна</option>
+      </select></br>
+      <!-- <label for="selectAge">Возраст</label> -->
+      <select id="selectAge" onchange="App()">
+        <option selected="true" disabled>Возраст</option>
+      </select></br>
+      <!-- <label for="selectGender">Пол</label> -->
+      <select id="selectGender" onchange="App()">
+        <option selected="true" disabled>Пол</option>
+      <option value="Male" id="gender">Мужчина</option>
+      <option value="Female" id="gender">Женщина</option>
+      </select></br>
+      <p>Средняя продолжительность жизни — <span id="countryLifespan"></span> <span id="ymwd"></span></p>
+      <!-- <input type="submit" onclick="App()" value="Посчитать"> -->
+      <div class="add">
+      <p class="info">Данные о средней продолжительности жизни — <a href="https://apps.who.int/gho/data/node.main.688">из отчёта Всемирной организации здравоохранения</a> за 2019 год.</p>
+      </div>
+    </div>
+  </body>
+</html>
